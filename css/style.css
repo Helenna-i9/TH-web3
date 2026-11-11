@@ -347,6 +347,141 @@ form input:focus, form select :focus {
     background-color: #d1d5db;
 }
 
+.thong-tin-hoc-ky {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.thong-tin-hoc-ky h3 {
+    color: #174a77;
+    font-size: 20px;
+}
+
+.danh-sach-hoc-ky {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.muc-hoc-ky {
+    background-color: #e8f2fc;
+    border: 1px solid #c8dff3;
+    border-radius: 8px;
+    padding: 15px;;
+}
+
+.khu-vuc-hoc-phan {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.khu-vuc-hoc-phan h3 {
+    color: #174a77;
+    font-size: 20px;
+}
+
+.khu-vuc-hoc-phan p {
+    color: #555555;
+}
+
+.noi-dung-hoc-phan {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.hoc-phan-da-chon {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.hoc-phan-da-chon h3 {
+    color: #174a77;
+    font-size: 20px;
+}
+
+.noi-dung-da-chon {
+    background-color: #f4f6f8;
+    border:  1px dashed #c8dff3;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 100px;
+}
+
+.bang-hoc-phan {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+}
+
+thead {
+    background-color: #174a77;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
+}
+
+th:nth-child(1), td:nth-child(1), 
+th:nth-child(4), td:nth-child(4),
+th:nth-child(6), td:nth-child(6) {
+    text-align: center;
+}
+
+.trang-thai {
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+
+.con-cho {
+    background-color: #e3f5e9;
+    color: #237a42;
+}
+
+.da-day {
+    background-color: #fde8e8;
+    color: #b42318;
+}
+
+.nut-dang-ky {
+    background-color: #1265ad;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+.nut-dang-ky:hover {
+    background-color: #174a77;
+}
+
+.nut-dang-ky-bi-vo-hieu-hoa {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.nut-huy {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+}
+
+.nut-huy:hover {
+    background-color: #b42318;
+}
+
 footer {
     background-color: #174a77;
     color: white;
@@ -432,6 +567,14 @@ footer {
     }
 
     form input, form select {
+        box-sizing: border-box;
+    }
+
+    .danh-sach-hoc-ky {
+        grid-template-columns: 1fr;
+    }
+
+    .muc-hoc-ky {
         box-sizing: border-box;
     }
 

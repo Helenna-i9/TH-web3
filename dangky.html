@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Đăng ký học phần - Cổng thông tin sinh viên</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p>TRƯỜNG ĐẠI HỌC CỬU LONG</p>
+            <h1>CỔNG THÔNG TIN SINH VIÊN</h1>
+            <p>Người dùng: Sinh viên</p>
+            <div class="header-content">
+                <img class="logo" src="images/logo.png" alt="Logo Trường Đại học">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container nav-menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="sinhvien.html">Thông tin sinh viên</a>
+            <a class="active" href="dangky.html">Đăng ký học phần</a>
+            <a href="thoikhoabieu.html">Thời khóa biểu</a>
+            <a href="ketqua.html">Kết quả học tập</a>
+            <a href="thongbao.html">Thông báo</a>
+        </div>
+    </nav>    
+    <main class="container">
+       <section class="tieu-de-trang">
+            <h2>ĐĂNG KÝ HỌC PHẦN</h2>
+            <p>Xem danh sách học phần và thực hiện đăng ký học phần trong học kỳ</p>
+       </section>
+       <section class="thong-tin-hoc-ky">
+            <h3>THÔNG TIN HỌC KỲ</h3>
+            <div class="danh-sach-hoc-ky">
+                <div class="muc-hoc-ky">
+                    <h4>Năm học</h4>
+                    <p>2026-2027</p>
+                </div>
+                <div class="muc-hoc-ky">
+                    <h4>Học kỳ</h4>
+                    <p>Học kỳ 1</p>
+                </div>
+                <div class="muc-hoc-ky">
+                    <h4>Trạng thái đăng ký</h4>
+                    <p>Đang mở</p>
+                </div>
+            </div>
+       </section>
+       <section class="khu-vuc-hoc-phan">
+            <h3>DANH SÁCH HỌC PHẦN</h3>
+            <p>Các học phần được mở đăng ký trong học kỳ hiện tại</p>
+            <div class="noi-dung-hoc-phan">
+                <table class="bang-hoc-phan">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã HP</th>
+                            <th>Tên học phần</th>
+                            <th>Số TC</th>
+                            <th>Giảng viên</th>
+                            <th>Số lượng đăng ký</th>
+                            <th>Trạng thái</th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>INT301</td>
+                            <td>Lập trình Web</td>
+                            <td>3</td>
+                            <td>Nguyễn Văn Bình</td>
+                            <td>35/40</td>
+                            <td><span class="trang-thai con-cho">Còn chỗ</span></td>
+                            <td><button class="nut-dang-ky">Đăng ký</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>INT302</td>
+                            <td>Cơ sở dữ liệu</td>
+                            <td>3</td>
+                            <td>Trần Thị Hoa</td>
+                            <td>38/40</td>
+                            <td><span class="trang-thai con-cho">Còn chỗ</span></td>
+                            <td><button class="nut-dang-ky">Đăng ký</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>INT303</td>
+                            <td>Mạng máy tính</td>
+                            <td>3</td>
+                            <td>Lê Văn Minh</td>
+                            <td>40/40</td>
+                            <td><span class="trang-thai da-day">Đã đầy</span></td>
+                            <td><button class="nut-dang-ky nut-dang-ky-bi-vo-hieu-hoa" disabled >Đăng ký</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>INT304</td>
+                            <td>Công nghệ phần mềm</td>
+                            <td>3</td>
+                            <td>Phạm Thị Lan</td>
+                            <td>25/40</td>
+                            <td><span class="trang-thai con-cho">Còn chỗ</span></td>
+                            <td><button class="nut-dang-ky">Đăng ký</button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>INT305</td>
+                            <td>Trí tuệ nhân tạo</td>
+                            <td>3</td>
+                            <td>Võ Văn Hùng</td>
+                            <td>30/40</td>
+                            <td><span class="trang-thai con-cho">Còn chỗ</span></td>
+                            <td><button class="nut-dang-ky">Đăng ký</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+       </section>
+       <section class="hoc-phan-da-chon">
+            <h3>HỌC PHẦN ĐÃ CHỌN</h3>
+            <p>Danh sách các học phần sinh viên lựa chọn đăng ký</p>
+            <div class="noi-dung-da-chon">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã HP</th>
+                            <th>Tên học phần</th>
+                            <th>Số TC</th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>INT301</td>
+                            <td>Lập trình Web</td>
+                            <td>3</td>
+                            <td><button class="nut-huy">Hủy</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>INT302</td>
+                            <td>Cơ sở dữ kiệu</td>
+                            <td>3</td>
+                            <td><button class="nut-huy">Hủy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+       </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <!-- <p>&copy; 2026 Trường Đại học Công nghệ. Cổng thông tin sinh viên</p>
+            <p>Email: phamthihongthu@mku.edu.vn</p> -->
+            <div class="footer-info">
+                <h1>TRƯỜNG ĐẠI HỌC CỬU LONG</h1>
+                <p>Cổng thông tin sinh viên</p>
+                <p>&copy; 2026 Trường Đại học Cửu Long.</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Hỗ trợ sinh viên</h2>
+                <p>Email: <a href="mailto:phamthihongthu@mku.edu.vn">phamthihongthu@mku.edu.vn</a></p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
