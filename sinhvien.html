@@ -19,15 +19,113 @@
     </header>
     <nav>
         <div class="container nav-menu">
-            <a class="active" href="index.html">Trang chủ</a>
-            <a href="sinhvien.html">Thông tin sinh viên</a>
+            <a href="index.html">Trang chủ</a>
+            <a class="active" href="sinhvien.html">Thông tin sinh viên</a>
             <a href="dangky.html">Đăng ký học phần</a>
             <a href="thoikhoabieu.html">Thời khóa biểu</a>
             <a href="ketqua.html">Kết quả học tập</a>
             <a href="thongbao.html">Thông báo</a>
         </div>
     </nav>    
-    
+    <main class="container">
+        <section class="tieu-de-trang">
+            <h2>THÔNG TIN SINH VIÊN</h2>
+            <p>Xem thông tin cá nhân và quá trình học tập của sinh viên.</p>
+        </section>
+        <section class="thong-tin-sinh-vien">
+            <div class="ho-so-sinh-vien">
+                <img class="anh-dai-dien" src="images/avatar.png" alt="ảnh đại diện">
+                <h3>Nguyễn Văn An</h3>
+                <p>Mã sinh viên: 20260001</p>
+                <p>Ngành: Công nghệ thông tin</p>
+            </div>
+            <div class="chi-tiet-sinh-vien">
+                <h3>Thông tin cá nhân</h3>
+                <div class="danh-sach-thong-tin">
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Họ và tên</span>
+                        <span class="gia-tri-thong-tin"> Nguyễn Văn An</span>
+                    </div>
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Ngày sinh</span>
+                        <span class="gia-tri-thong-tin">15/08/2006</span>
+                    </div>
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Giới tính</span>
+                        <span class="gia-tri-thong-tin">Nam</span>
+                    </div>
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Email</span>
+                        <span class="gia-tri-thong-tin">nguyenvanan@stu.mku.edu.vn</span>
+                    </div>
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Số điện thoại</span>
+                        <span class="gia-tri-thong-tin">0901234567</span>
+                    </div>
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Lớp</span>
+                        <span class="gia-tri-thong-tin">CNTT K26A</span>
+                    </div>
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Khoa</span>
+                        <span class="gia-tri-thong-tin">Công nghệ thông tin</span>
+                    </div>
+                    <div class="dong-thong-tin">
+                        <span class="nhan-thong-tin">Khóa học</span>
+                        <span class="gia-tri-thong-tin">2026-2030</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cap-nhat-thong-tin">
+            <h2>CẬP NHẬT THÔNG TIN SINH VIÊN</h2>
+            <p>Nhập thông tin cá nhân vào biểu mẫu bên dưới</p>
+        </section>
+        <form class="bieu-mau-sinh-vien" action="">
+            <div class="luoi-bieu-mau">
+                <div class="nhom-nhap-lieu">
+                    <label for="HovaTen">Họ và tên</label>
+                    <input id="HovaTen" name="HovaTen" type="text" placeholder="Nhập họ và tên">
+                </div>
+                <div class="nhom-nhap-lieu">
+                    <label for="ngaysinh">Ngày sinh</label>
+                    <input id="ngaysinh" name="ngaysinh" type="date">
+                </div>
+                <div class="nhom-nhap-lieu">
+                    <label for="gioitinh">Giới tính</label>
+                    <select name="gioitinh" id="gioitinh">
+                        <option value="nam">Nam</option>
+                        <option value="nu">Nữ</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </div>
+                <div class="nhom-nhap-lieu">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="nhom-nhap-lieu">
+                    <label for="sodienthoai">Số điện thoại</label>
+                    <input type="tel" name="sodienthoai" id="sodienthoai">
+                </div>
+                <div class="nhom-nhap-lieu">
+                    <label for="lop">Lớp</label>
+                    <input type="text" name="lop" id="lop">
+                </div>
+                <div class="nhom-nhap-lieu">
+                    <label for="khoa">Khoa</label>
+                    <input type="text" name="khoa" id="khoa">
+                </div>
+                <div class="nhom-nhap-lieu">
+                    <label for="khoahoc">Khóa học</label>
+                    <input type="text" name="khoahoc" id="khoahoc">
+                </div>
+            </div>
+            <div class="nut-bieu-mau">
+                <button type="submit" class="nut-gui">Submit</button>
+                <button type="reset" class="nut-nhap-lai">Reset</button>
+            </div>
+        </form>
+    </main>
     <footer>
         <div class="container footer-content">
             <!-- <p>&copy; 2026 Trường Đại học Công nghệ. Cổng thông tin sinh viên</p>
